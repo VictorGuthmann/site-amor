@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor é Eterno</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maria Vitória, nossa história é única!</h1>
+        <p class="mensagem">Cada capítulo da nossa história é escrito com amor, e o próximo será ainda mais belo! 💕</p>
+        <div class="navegacao">
+            <a href="pagina5.html" class="botao">Próxima página</a>
+        </div>
+    </div>
+
+    <script>
+        fetch('https://ipinfo.io?token=7870f9772f55df')
+            .then(response => response.json())
+            .then(data => {
+                localStorage.setItem('userIP', data.ip);
+            })
+            .catch(error => {
+                console.error("Erro ao obter o IP:", error);
+            });
+    </script>
+</body>
+</html>

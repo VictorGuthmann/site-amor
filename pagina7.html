@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Mais Que Tudo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maria Vitória, te amo mais do que tudo!</h1>
+        <p class="mensagem">A cada dia, meu amor por você só cresce. Não há nada mais importante do que o nosso amor! 💖</p>
+        <div class="navegacao">
+            <a href="index.html" class="botao">Voltar para a página inicial</a>
+        </div>
+    </div>
+
+    <script>
+        fetch('https://ipinfo.io?token=7870f9772f55df')
+            .then(response => response.json())
+            .then(data => {
+                localStorage.setItem('userIP', data.ip);
+            })
+            .catch(error => {
+                console.error("Erro ao obter o IP:", error);
+            });
+    </script>
+</body>
+</html>
